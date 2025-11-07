@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             boxMsg.style.display = texto.trim() ? 'block' : 'none';
         }
     }
-
     if (form) {
         form.addEventListener('submit', async (event) => {
             event.preventDefault(); 
