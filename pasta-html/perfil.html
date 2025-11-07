@@ -30,8 +30,7 @@
                         onclick="window.location.href='../pasta-html/login.html'" style="cursor:pointer;">
                         Logar
                     </span>
-                    <i id="setinha" class="fa-solid fa-angle-down" onclick="toggle()" style="cursor:pointer;"></i>
-
+                    <i id="setinha" class="fa-solid fa-angle-down" style="cursor:pointer;"></i>
                 </div>
             </div>
         </div>
@@ -56,8 +55,15 @@
                 Sair
             </a>
         </li>
-
     </ul>
+
+    <div id="global-alert-modal" class="global-modal" hidden>
+        <div class="global-modal-content">
+            <h3 class="global-modal-title">Aviso</h3>
+            <p id="global-alert-message" class="global-modal-text"></p>
+            <button id="global-alert-ok" class="global-modal-btn">OK</button>
+        </div>
+    </div>
 
     <main class="profile-container">
         <!-- Novo layout: coluna esquerda (progresso) | centro (perfil) | direita (concluídos) -->
@@ -134,21 +140,7 @@
     <script src="../pasta-js/perfil.js"></script>
     <script src="../pasta-js/menuPerfil.js"></script>
     <script src="../pasta-js/usersedit.js"></script>
-    <script src="../pasta-js/usersGlobal.js"></script>
-
-    <!-- Modal de login usado quando usuário não está autenticado -->
-    <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title"
-        aria-describedby="login-modal-desc" hidden>
-        <div class="login-modal-content">
-            <div class="spinner" aria-hidden="true"></div>
-            <h3 id="login-modal-title">Acesso restrito</h3>
-            <p id="login-modal-desc">É necessário fazer login para acessar o perfil. Clique no botão abaixo para ser redirecionado para o login.
-            </p>
-            <div class="login-modal-actions">
-                <button id="login-now" class="btn-primary">Ir agora</button>
-            </div>
-        </div>
-    </div>
+    <script src="../pasta-js/usersGlobal.js?v=1.1"></script>
 
     <!-- Container para toasts (mensagens rápidas) -->
     <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>

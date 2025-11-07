@@ -1,4 +1,9 @@
 <?php
+
+// Define o cookie da sessão para durar 30 dias
+$tempo_de_vida = 30 * 24 * 60 * 60; // 30 dias em segundos
+session_set_cookie_params($tempo_de_vida);
+
 session_start(); // Inicia a sessão
 
 $servername = "srv791.hstgr.io"; 

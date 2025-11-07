@@ -25,13 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const result = await response.json();
 
-            // Se o PHP disser que o usuário não está logado
-            if (result.status === 'error' && result.message === 'Usuário não logado') {
-                // Mostra o modal de login
-                if (loginModal) loginModal.hidden = false;
-                return;
-            }
-
             if (result.status === 'success') {
                 processBooks(result.data);
             } else {
