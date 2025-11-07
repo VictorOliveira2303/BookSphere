@@ -239,3 +239,60 @@ body.modo-sepia {
     /* Adiciona espaço à direita dentro do input */
     padding-right: 45px !important;
 }
+
+/*
+======================================================
+  CÓDIGO PARA ADICIONAR AO SEU 'login.css'
+  (Estilos da página de recuperação)
+======================================================
+*/
+
+/* Esconde o bloco do código por padrão */
+#bloco_codigo { 
+    display: none; 
+} 
+
+/* Classe que o JS usará para esconder o bloco de email */
+#bloco_email.hidden { 
+    display: none; 
+}
+
+/* Estilo da mensagem de status/erro 
+   (baseado nas suas classes 'box-msg') 
+*/
+.mensagem-status {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #ffcccc; /* Cor padrão de erro */
+}
+
+/* Estilo do cronômetro */
+#cronometro {
+    color: #f0f0f0; /* Cor do texto (ajuste se necessário) */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Classe que o JS usará para esconder o cronômetro */
+#cronometro.hidden { 
+    display: none; 
+}
+
+/* ======================================================
+  CÓDIGO PARA ADICIONAR AO SEU 'login.css'
+======================================================
+*/
+
+/* Esconde a "barrinha branca" (box-msg) por padrão */
+.box-msg {
+    display: none;
+}
+
+/* O JS vai usar esta classe para mostrar a caixa */
+.box-msg.show {
+    display: block;
+}

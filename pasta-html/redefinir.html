@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../LOGOS/Favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../pasta-css/login.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>BookSphere | Redefinir</title>
+</head>
+
+<body>
+
+    <button id="btn-modo-leitura"></button>
+
+    <div class="main-login">
+        <div class="right-login">
+            <div class="card-login">
+
+                <Img src="../LOGOS/Logo-fundo transparente-recortado.png">
+                
+                <form id="bloco_nova_senha" style="display: none;">
+                    <h3 style="text-align: center; margin-bottom: 15px;">Crie sua Nova Senha</h3>
+                    <div class="textfield">
+                        <label for="nova_senha">Nova Senha</label>
+                        <input type="password" id="nova_senha" name="nova_senha" placeholder="Digite a nova senha" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="confirmar_senha">Confirmar Senha</label>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme a nova senha" required>
+                    </div>
+                    <button type="submit" class="btn-login">Salvar Nova Senha</button>
+                </form>
+
+                <form id="bloco_novo_usuario" style="display: none;">
+                    <h3 style="text-align: center; margin-bottom: 15px;">Crie seu Novo Usuário</h3>
+                    <div class="textfield">
+                        <label for="novo_usuario">Novo Nome de Usuário</label>
+                        <input type="text" id="novo_usuario" name="novo_usuario" placeholder="Digite o novo usuário" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="confirmar_usuario">Confirmar Usuário</label>
+                        <input type="text" id="confirmar_usuario" name="confirmar_usuario" placeholder="Confirme o novo usuário" required>
+                    </div>
+                    <button type="submit" class="btn-login">Salvar Novo Usuário</button>
+                </form>
+
+                <div class="box-msg">
+                    <p id="mensagem" class="mensagem-status"></p> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../pasta-js/redefinir.js"></script> 
+    <script src="../pasta-js/personalizacao.js"></script> 
+    
+</body>
+</html>

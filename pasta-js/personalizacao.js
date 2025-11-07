@@ -43,11 +43,15 @@ function aplicarModo(modo) {
     localStorage.setItem("modoAtual", modo);
 }
 
-// Evento do botão
-btnModo.addEventListener("click", () => {
-    indice = (indice + 1) % modos.length;
-    aplicarModo(modos[indice]);
-});
+// ✅ CORREÇÃO APLICADA AQUI:
+// "Se o btnModo foi encontrado (não é null)..."
+if (btnModo) {
+    // "...então, adicione o evento de clique."
+    btnModo.addEventListener("click", () => {
+      indice = (indice + 1) % modos.length;
+      aplicarModo(modos[indice]);
+    });
+}
 
 // Quando a página carrega, verifica se já tem modo salvo
 window.addEventListener("DOMContentLoaded", () => {

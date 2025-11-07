@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../LOGOS/Favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../pasta-css/login.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>BookSphere | Recuperação</title>
+</head>
+
+<body>
+
+    <button id="btn-modo-leitura"></button>
+
+    <div class="main-login">
+    <div class="right-login">
+    <div class="card-login">    <Img src="../LOGOS/Logo-fundo transparente-recortado.png">
+    
+                    <form id="bloco_email">
+                    <h3 id="titulo_recuperacao" style="text-align: center; margin-bottom: 5px;">Recuperar Conta</h3>
+                    <p id="subtitulo_recuperacao" style="text-align: center; margin-bottom: 15px; font-size: 0.9em;">Digite seu e-mail de cadastro.</p>
+                    
+    <div class="textfield">
+    <label for="email">E-mail</label> 
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail cadastrado" required> 
+    </div>
+    
+    <button type="submit" class="btn-login">Enviar Código</button>
+    
+    <div class="signup-text" style="margin-top: 15px;">
+                            Lembrou sua senha? <a href="login.html">Voltar ao Login</a>.
+    </div>
+    </form>
+                    <form id="bloco_codigo">
+    <h3 style="text-align: center; margin-bottom: 5px;">Verificar Código</h3>
+    <p id="info_codigo" style="text-align: center; margin-bottom: 15px; font-size: 0.9em;">Enviamos um código para o seu e-mail.</p>
+                    
+    <div class="textfield">
+    <label for="codigo">Código de 4 dígitos</label>
+    <input type="text" id="codigo" name="codigo" placeholder="0000" required maxlength="4">
+    </div>
+    
+    <button type="submit" class="btn-login" id="btn_verificar">Verificar Código</button>
+    
+    <div id="cronometro" class="hidden"></div>
+    </form>
+
+    <div class="box-msg">
+    <p id="mensagem" class="mensagem-status"></p> 
+    </div>
+
+    </div>  </div>
+    </div>
+
+    <script src="../pasta-js/recuperar.js"></script> 
+    <script src="../pasta-js/personalizacao.js"></script> 
+    
+</body>
+</html>
